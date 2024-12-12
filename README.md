@@ -48,6 +48,13 @@
     - or using the IP  54.208.161.254 .
     - if the DNS dosenot work please try to open it in incognito mode
 
+**Directory Tree:**
+```plaintext
+/var/www/html
+├── .gitignore
+├── README.md
+├── index.php
+
 
 ## Repository Structure
 - `/var/www/html/`
@@ -55,12 +62,6 @@
   - `README.md`: Documentation of the LAMP setup and deployment steps.
   - `index.php`: Main PHP file displaying visitor IP and time.
 
-**Directory Tree:**
-```plaintext
-/var/www/html
-├── .gitignore
-├── README.md
-├── index.php
 
 
 
