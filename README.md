@@ -59,7 +59,8 @@ The following diagram represents the simple LAMP stack architecture deployed on 
 - **Security Group**: Controls inbound and outbound traffic for the EC2 instance.
 - **EC2 Instance**: Runs the LAMP stack (Linux, Apache, MySQL, and PHP) and hosts the website.
 
-![AWS Architecture](imagesi/aws-architecture.jpeg)
+![AWS Architecture](aws-architecture.jpeg)
+
 
 ### Explanation:
 1. **Region**: AWS resources are deployed in a specific region.
