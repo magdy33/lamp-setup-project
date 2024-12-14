@@ -61,6 +61,7 @@ The following diagram represents the simple LAMP stack architecture deployed on 
 
 ![AWS Architecture](aws-architecture.jpeg)
 
+
 ### Explanation:
 1. **Region**: AWS resources are deployed in a specific region.
 2. **VPC**: A logically isolated network created in AWS.
