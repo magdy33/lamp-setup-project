@@ -90,6 +90,34 @@ This architecture is a simple implementation and does not follow best practices 
 
 
 
+Troubleshooting
+
+
+Time Zone Configuration Issue (North Virginia vs. Cairo)
+
+While setting up the LAMP stack on the EC2 instance, I encountered an issue where the server's time zone was set to UTC, as the AWS region was North Virginia. This caused a time discrepancy when checking the server time, as it did not match the local time in Cairo, Egypt.
+Solution:
+
+To resolve this, I adjusted the server’s time zone to match Cairo's time zone by following these steps:
+
+    Check the current time zone:
+
+timedatectl
+
+List available time zones:
+
+timedatectl list-timezones
+
+Set the time zone to Cairo:
+
+sudo timedatectl set-timezone Africa/Cairo
+
+Verify the new time zone setting:
+
+    timedatectl
+
+This successfully changed the time zone to Africa/Cairo, ensuring that the server time was aligned with local time.
+
 
 ##===========================================================================================##
 
