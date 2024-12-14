@@ -46,7 +46,33 @@
     - Obtained a public IP for the server and linked it to a custom domain using DNS A records.
     - Verified access by visiting `ec2-54-208-161-254.compute-1.amazonaws.com`
     - or using the IP  54.208.161.254 .
-    - if the DNS dosenot work please try to open it in incognito mode
+    - if the DNS does not work please try to open it in incognito mode
+
+
+## Architecture Overview
+
+The following diagram represents the simple LAMP stack architecture deployed on AWS:
+
+- **Region**: Defines the geographical location of the AWS resources.
+- **VPC (Virtual Private Cloud)**: Provides an isolated network environment for the resources.
+- **Public Subnet**: Hosts the EC2 instance and ensures it can be accessed from the internet.
+- **Security Group**: Controls inbound and outbound traffic for the EC2 instance.
+- **EC2 Instance**: Runs the LAMP stack (Linux, Apache, MySQL, and PHP) and hosts the website.
+
+![AWS Architecture](aws-architecture.jpeg)
+
+### Explanation:
+1. **Region**: AWS resources are deployed in a specific region.
+2. **VPC**: A logically isolated network created in AWS.
+3. **Subnet**: A public subnet is used to make the server publicly accessible.
+4. **Security Group**: Allows only HTTP (port 80) and SSH (port 22) traffic.
+5. **EC2 Instance**: The instance hosts the website with the LAMP stack installed.
+
+### Note:
+This architecture is a simple implementation and does not follow best practices for production environments (e.g., no load balancing, auto-scaling, or multi-AZ deployment). It is designed purely for demonstration purposes and may not be suitable for real-world, large-scale applications.
+
+
+
 
 **Directory Tree:**
 ```plaintext
@@ -54,7 +80,7 @@
 ├── .gitignore
 ├── README.md
 ├── index.php
-
+```
 
 ## Repository Structure
 - `/var/www/html/`
