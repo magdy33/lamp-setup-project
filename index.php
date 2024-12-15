@@ -2,7 +2,7 @@
 // Database credentials
 $servername = "localhost";
 $username = "web_user";
-$password = "StrongPassword123";
+$password = "Your-Password-Here";
 $dbname = "web_db";
 
 // Create connection
