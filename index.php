@@ -1,9 +1,6 @@
 <?php
 // Database credentials
-$servername = "localhost";
-$username = "web_user";
-$password = "Your-Password-Here";
-$dbname = "web_db";
+require_once 'config.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
