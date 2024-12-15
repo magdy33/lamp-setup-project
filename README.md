@@ -29,7 +29,7 @@
     - Created database `web_db` and user `web_user` with the following commands:
       ```sql
       CREATE DATABASE web_db;
-      CREATE USER 'web_user'@'localhost' IDENTIFIED BY 'StrongPassword123';
+      CREATE USER 'web_user'@'localhost' IDENTIFIED BY '<Your-Password-Here>';  
       GRANT ALL PRIVILEGES ON web_db.* TO 'web_user'@'localhost';
       FLUSH PRIVILEGES;
       ```
